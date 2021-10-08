@@ -344,9 +344,9 @@ img.logo {
   /* grid-column: row; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "contact-me contact-me contact-me contact-me"
-                       "form       form       social     my-info"
-                       "form       form       social     my-info"
-                       "form       form       social     my-info";
+                       "form       form       my-info    social"
+                       "form       form       my-info    social"
+                       "form       form       my-info    social";
 
   background-image: url("/images/san-fran.png");
   background-size: auto;
