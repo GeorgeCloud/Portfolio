@@ -13,7 +13,7 @@
       <h1 class="name-logo">George Ceja</h1>
       <nav>
         <ul>
-          <li><img data-href="#home" id="home-button" src="./images/home.png" alt="home button"></li>
+          <li><a href="#about-me"><img data-href="home" id="home-button" src="./images/home.png" alt="home button"></a></li>
           <li><a href="#about-me">About me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -23,12 +23,11 @@
     </section>
 
     <section id="home">
-
       <h1 class="large-font">Hi, My Name Is <i class="name-color">George Ceja</i></h1>
       <h2>Who's <em class="desc">passionate</em> about learning and applying <em class="desc">Computer Science</em></h2>
       <div class="white-box">
         <div class="black-box">
-          <button id="view-work" href="#about-me" type="button" name="button"><a href="#about-me">View Work</a></button>
+          <button id="view-work" href="#about-me" type="button" name="button"><a href="#portfolio">View Projects</a></button>
         </div>
       </div>
     </section>
@@ -41,8 +40,8 @@
 
     <section id="about-me2">
       <h2 class="medium-font outline">After High School, I worked a large startup as a software developer
-        for 2 years, on my free time I contributed to multiple project with close friends to build applications that
-        made processes easier.</h2>
+        for 2 years, on my free time I enjoy working with close friends to build applications that
+        make daily tasks easier.</h2>
     </section>
 
     <section id="education-header">
@@ -52,7 +51,9 @@
     <section class="content reset above-and-down" id="education">
       <ul>
         <li>
-          <img class="logo" src="./images/dominican_logo.png" alt="dominican school logo">
+          <a href="https://www.dominican.edu/">
+            <img class="logo" src="./images/dominican_logo.png" alt="dominican school logo">
+          </a>
           <div class="above-and-down">
             <h4>Dominican University of California</h4>
             <p><b>July 2021 – June 2023</b></p>
@@ -61,7 +62,10 @@
           </div>
         </li>
         <li>
-          <img class="logo" src="./images/cf_logo.png" alt="Code Fellows Logo">
+          <a href="https://www.codefellows.org/">
+            <img class="logo" src="./images/cf_logo.png" alt="Code Fellows Logo">
+          </a>
+
           <div class="above-and-down">
             <h4>Code Fellows</h4>
             <p><b>June 2017 – Dec 2018</b></p>
@@ -74,33 +78,53 @@
 
     <section class="reset above-and-down" id="experience">
       <h1>Experience</h1>
-      <div class="box cloudapp-experience">
-        <div class="cloudapp1">
-          <img class="logo" src="./images/cloudapp.png" alt="CloudApp Logo">
+      <div class="experience-item">
+        <div class="cloudapp-item-1">
+          <a href="https://www.getcloudapp.com/">
+            <img class="logo" src="./images/cloudapp.png" alt="CloudApp Logo">
+          </a>
           <h4 class="">CloudApp - Software Developer</h4>
         </div>
         <!-- <div class="above-and-down"> -->
-        <p class="cloudapp2"><b>Dec 2019 – Jul 2021</b></p>
-        <p class="cloudapp3"><b>Castro Valley, California</b></p>
-        <p class="cloudapp4">Added core features: user activity notifications, file expiration settings, webhooks, created userbase click tracking software.</p>
+        <p class="cloudapp-item-2"><b>Dec 2019 – Jul 2021</b></p>
+        <p class="cloudapp-item-3"><b>Castro Valley, California</b></p>
+        <p class="cloudapp-item-4">Added core features: user activity notifications, file expiration settings, webhooks, created userbase click tracking software.</p>
         <!-- </div> -->
       </div>
-      <div class="box robotics-experience">
-        <div class="robotics1">
-          <img class="logo" src="./images/pi.png" alt="PI Robotics Logo">
-        <!-- <div class="above-and-down"> -->
+      <div class="experience-item">
+        <div class="robotics-item-1">
+          <a href="https://pioneers.berkeley.edu/">
+            <img class="logo" src="./images/pi.png" alt="PI Robotics Logo">
+          </a>
           <h4>ECHS PI Competition - Robotics Programmer</h4>
         </div>
-        <p class="robotics2"><b>Jan 2015 – Dec 2016</b></p>
-        <p class="robotics3"><b>UC Berkeley, California</b></p>
-        <p class="robotics4">Implemented features: autonomous driving with sensors, finding shortest path, speeds, and support new team members to understand programming concepts.</p>
+        <p class="robotics-item-2"><b>Jan 2015 – Dec 2016</b></p>
+        <p class="robotics-item-3"><b>UC Berkeley, California</b></p>
+        <p class="robotics-item-4">Implemented features: autonomous driving with sensors, finding shortest path, speeds, and support new team members by teaching foundalmentals programming concepts.</p>
         <!-- </div> -->
+      </div>
+      <div class="experience-item">
+        <div class="">
+          <img class="logo" src="./images/empty.png" alt="Empty Logo">
+          <h4>Empty</h4>
+        </div>
+        <p><b>----------------------------</b></p>
+        <p><b>----------------</b></p>
+        <p>----------------------------------------------------------------------</p>
+      </div>
+      <div class="experience-item">
+        <div class="robotics-item-1">
+          <img class="logo" src="./images/empty.png" alt="Empty Logo">
+          <h4>Empty</h4>
+        </div>
+        <p class="robotics-item-2"><b>----------</b></p>
+        <p class="robotics-item-3"><b>----------------</b></p>
+        <p class="robotics-item-4">----------------------------------------------------------------------------</p>
       </div>
     </section>
 
     <section class="" id="portfolio">
       <h1>Projects</h1>
-      <!-- Projects -->
       <ul class="portfolio-projects">
         <li>
           <h5>Pokemon Go Tracker</h5>
@@ -122,16 +146,13 @@
       </ul>
     </section>
 
-
     <section id="contact-me">
-
         <h1>Contact Me</h1>
 
         <div class="profile-picture">
           <img src="./images/profile_thumbnail.png" alt="Profile Picture">
         </div>
 
-      <!-- <div class="side max-height"> -->
         <div id="form" class="lightblue-transparent-box">
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Email">
@@ -163,7 +184,6 @@
             <p>San Francisco, CA</p>
           </div>
         </div>
-      <!-- </div> -->
     </section>
 
     <script src="main.js"></script>
