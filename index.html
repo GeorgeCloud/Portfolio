@@ -4,47 +4,163 @@
     <meta charset="utf-8">
     <title>GC Resume</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet"> -->
   </head>
   <body>
-    <section class="">
-      <nav id="home">
+    <section class="log-nav">
+      <h1 class="name-logo">George Ceja</h1>
+      <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#home"><img id="home-button" src="/images/home.png" alt=""></a></li>
+          <li><a href="#about-me">About me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact-me">Contact Me</a></li>
         </ul>
       </nav>
-      <h2>George Ceja</h2>
-      <!-- profile picture / nav / small intro -->
     </section>
 
+    <section id="home">
+
+      <h1 class="large-font">Hi, My Name Is <i class="name-color">George Ceja</i></h1>
+      <h2>Who's <em class="desc">passionate</em> about learning and applying <em class="desc">Computer Science</em></h2>
+      <div class="white-box">
+        <div class="black-box">
+          <button id="view-work" href="#about-me" type="button" name="button"><a href="#about-me">View Work</a></button>
+        </div>
+      </div>
+      <!-- <div class="line-box"></div> -->
+    </section>
+
+    <!-- <section id="picture" src="/images/profile_picture2.png"> -->
     <section id="about-me">
-      <h1>About Me</h1>
-      <!-- About Me -->
+      <div id="picture" src="/images/profile_picture2.png">
+        <!-- <img id="profile-picture" src="/images/profile_picture2.png"> -->
+      </div>
+      <p class="outline top-35">My name is George I am a software developer, I am based in California.</p>
     </section>
 
-    <section id="experience">
-      <h1>Experience</h1>
-      <!-- Experience -->
+    <section id="about-me2">
+      <h2 class="medium-font outline">After High School, I worked a large startup as a software developer
+        for 2 years, on my free time I contributed to multiple project with close friends to build applications that
+        made processes easier.</h2>
     </section>
 
-    <section id="portfolio">
-      <h1>Portfolio</h1>
-      <!-- Projects -->
+    <section id="education-header">
+      <h1>Education</h1>
+    </section>
+
+    <section class="content reset above-and-down" id="education">
       <ul>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Experience</li>
-        <li>Portfolio</li>
-        <li>Contact Me</li>
+        <li>
+          <img class="logo" src="/images/dominican_logo.png" alt="">
+          <div class="above-and-down">
+            <h4>Dominican University of California</h4>
+            <p><b>July 2021 – June 2023</b></p>
+            <p><b>San Rafael, California</b></p>
+            <p>Applied Computer Science B.A.</p>
+          </div>
+        </li>
+        <li>
+          <img class="logo" src="/images/cf_logo.png" alt="">
+          <div class="above-and-down">
+            <h4>Code Fellows</h4>
+            <p><b>June 2017 – Dec 2018</b></p>
+            <p><b>Seattle, Washington</b></p>
+            <p>Advance Python Course with Django.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
+    <section class="reset above-and-down" id="experience">
+      <h1>Experience</h1>
+      <!-- Experience -->
+      <ul>
+        <li>
+          <img class="logo" src="/images/cloudapp.png" alt="">
+          <div class="above-and-down">
+            <h4>CloudApp - Software Developer</h4>
+            <p><b>Dec 2019 – Jul 2021</b></p>
+            <p><b>Castro Valley, California</b></p>
+            <p>Added core features: user activity notifications, file expiration settings, webhooks, created userbase click tracking software.</p>
+          </div>
+        </li>
+        <li>
+          <img class="logo" src="/images/pi.png" alt="">
+          <div class="above-and-down">
+            <h4>ECHS PI Competition - Robotics Programmer</h4>
+            <p><b>Jan 2015 – Dec 2016</b></p>
+            <p><b>UC Berkeley, California</b></p>
+            <p>Implemented features: autonomous driving with sensors, finding shortest path, speeds, and support new team members to understand programming concepts.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="" id="portfolio">
+      <h1>Projects</h1>
+      <!-- Projects -->
+      <ul class="portfolio-projects">
+        <li>
+          <h5>Pokemon Go Tracker</h5>
+          <img class="thumbnail" src="/images/pokemon_project.png" alt="">
+          <p class="description">Helps users find the legendary pokemon</p>
+        </li>
+        <li>
+          <h5>Eazy Walks</h5>
+          <img class="thumbnail mrp-icon" src="/images/mrp.png" alt="">
+          <p class="description"> The better Yelp, gives you the best and fastest direction to anywhere. Calculates
+            not only distance but evelation too.</p>
+        </li>
+        <li>
+          <h5>Material requirements planning.</h5>
+          <img class="thumbnail" src="/images/eazy.png" alt="">
+          <p class="description">Keep track of your inventory, simply add an item, enter the information
+            such as item's trim, color, quantity, and even sub-categories.</p>
+        </li>
+      </ul>
+    </section>
+
+
     <section id="contact-me">
-      <h1>Contact Me</h1>
-      <!-- Contact -->
+
+        <h1>Contact Me</h1>
+
+
+      <!-- <div class="side max-height"> -->
+        <div id="form" class="lightblue-transparent-box">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Subject">
+          <textarea cols="20" rows="10" placeholder="Enter your message" required></textarea>
+          <input type="button" value="Send Message">
+        </div>
+
+        <div id="socials" class="yellow-transparent-box">
+          <div>
+            <img class="small-icon" src="/images/socials/facebook.png">
+          </div>
+          <div>
+            <img src="/images/socials/twitter.png">
+          </div>
+          <div>
+            <img src="/images/socials/youtube.png">
+          </div>
+        </div>
+
+        <div id="my-info" class="black-transparent-box">
+          <p>George Ceja</p>
+          <p>+1 510.493.5532</p>
+          <p>GeorgeCeja08@gmail.com</p>
+          <p>San Francisco, CA</p>
+        </div>
+      <!-- </div> -->
     </section>
 
     <script src="main.js" charset="utf-8"></script>
