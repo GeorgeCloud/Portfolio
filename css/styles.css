@@ -178,7 +178,7 @@ img.logo {
 
 #education-header {
   margin-top: 500px;
-  background-image: url("/images/sky.png");
+  background-image: url("./images/sky.png");
   background-size: cover;
   background-attachment: fixed;
   height: 30vh;
@@ -307,7 +307,7 @@ img.logo {
 }
 
 #picture {
-  background-image: url("/images/profile_picture2.png");
+  background-image: url("./images/profile_picture2.png");
   background-size: auto;
   background-attachment: fixed;
   width: 600px;
@@ -348,7 +348,7 @@ img.logo {
                        "form       form       social     my-info"
                        "form       form       social     my-info";
 
-  background-image: url("/images/san-fran.png");
+  background-image: url("./images/san-fran.png");
   background-size: auto;
   background-attachment: fixed;
   height: 60vh;
