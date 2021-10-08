@@ -7,16 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet"> -->
   </head>
   <body>
     <section class="log-nav">
       <h1 class="name-logo">George Ceja</h1>
       <nav>
         <ul>
-          <li><a href="#home"><img id="home-button" src="./images/home.png" alt=""></a></li>
+          <li><img data-href="#home" id="home-button" src="./images/home.png" alt="home button"></li>
           <li><a href="#about-me">About me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -37,9 +34,9 @@
     </section>
 
     <section id="about-me">
-      <div id="picture" src="./images/profile_picture2.png">
+      <div id="picture">
       </div>
-      <p class="outline top-35">My name is George I am a software developer, I am based in California.</p>
+      <h3 class="outline top-35">My name is George I am a software developer, I am based in California.</h3>
     </section>
 
     <section id="about-me2">
@@ -55,7 +52,7 @@
     <section class="content reset above-and-down" id="education">
       <ul>
         <li>
-          <img class="logo" src="./images/dominican_logo.png" alt="">
+          <img class="logo" src="./images/dominican_logo.png" alt="dominican school logo">
           <div class="above-and-down">
             <h4>Dominican University of California</h4>
             <p><b>July 2021 – June 2023</b></p>
@@ -64,7 +61,7 @@
           </div>
         </li>
         <li>
-          <img class="logo" src="./images/cf_logo.png" alt="">
+          <img class="logo" src="./images/cf_logo.png" alt="Code Fellows Logo">
           <div class="above-and-down">
             <h4>Code Fellows</h4>
             <p><b>June 2017 – Dec 2018</b></p>
@@ -77,27 +74,28 @@
 
     <section class="reset above-and-down" id="experience">
       <h1>Experience</h1>
-      <!-- Experience -->
-      <ul>
-        <li>
-          <img class="logo" src="./images/cloudapp.png" alt="">
-          <div class="above-and-down">
-            <h4>CloudApp - Software Developer</h4>
-            <p><b>Dec 2019 – Jul 2021</b></p>
-            <p><b>Castro Valley, California</b></p>
-            <p>Added core features: user activity notifications, file expiration settings, webhooks, created userbase click tracking software.</p>
-          </div>
-        </li>
-        <li>
-          <img class="logo" src="./images/pi.png" alt="">
-          <div class="above-and-down">
-            <h4>ECHS PI Competition - Robotics Programmer</h4>
-            <p><b>Jan 2015 – Dec 2016</b></p>
-            <p><b>UC Berkeley, California</b></p>
-            <p>Implemented features: autonomous driving with sensors, finding shortest path, speeds, and support new team members to understand programming concepts.</p>
-          </div>
-        </li>
-      </ul>
+      <div class="box cloudapp-experience">
+        <div class="cloudapp1">
+          <img class="logo" src="./images/cloudapp.png" alt="CloudApp Logo">
+          <h4 class="">CloudApp - Software Developer</h4>
+        </div>
+        <!-- <div class="above-and-down"> -->
+        <p class="cloudapp2"><b>Dec 2019 – Jul 2021</b></p>
+        <p class="cloudapp3"><b>Castro Valley, California</b></p>
+        <p class="cloudapp4">Added core features: user activity notifications, file expiration settings, webhooks, created userbase click tracking software.</p>
+        <!-- </div> -->
+      </div>
+      <div class="box robotics-experience">
+        <div class="robotics1">
+          <img class="logo" src="./images/pi.png" alt="PI Robotics Logo">
+        <!-- <div class="above-and-down"> -->
+          <h4>ECHS PI Competition - Robotics Programmer</h4>
+        </div>
+        <p class="robotics2"><b>Jan 2015 – Dec 2016</b></p>
+        <p class="robotics3"><b>UC Berkeley, California</b></p>
+        <p class="robotics4">Implemented features: autonomous driving with sensors, finding shortest path, speeds, and support new team members to understand programming concepts.</p>
+        <!-- </div> -->
+      </div>
     </section>
 
     <section class="" id="portfolio">
@@ -106,18 +104,18 @@
       <ul class="portfolio-projects">
         <li>
           <h5>Pokemon Go Tracker</h5>
-          <img class="thumbnail" src="./images/pokemon_project.png" alt="">
+          <img class="thumbnail" src="./images/pokemon_project.png" alt="Pokemon Go Tracker Thumbnail">
           <p class="description">Helps users find the legendary pokemon</p>
         </li>
         <li>
           <h5>Eazy Walks</h5>
-          <img class="thumbnail mrp-icon" src="./images/mrp.png" alt="">
+          <img class="thumbnail mrp-icon" src="./images/mrp.png" alt="MRP Thumbnail">
           <p class="description"> The better Yelp, gives you the best and fastest direction to anywhere. Calculates
             not only distance but evelation too.</p>
         </li>
         <li>
           <h5>Material requirements planning.</h5>
-          <img class="thumbnail" src="./images/eazy.png" alt="">
+          <img class="thumbnail" src="./images/eazy.png" alt="Eazy Walks Logo">
           <p class="description">Keep track of your inventory, simply add an item, enter the information
             such as item's trim, color, quantity, and even sub-categories.</p>
         </li>
@@ -129,6 +127,9 @@
 
         <h1>Contact Me</h1>
 
+        <div class="profile-picture">
+          <img src="./images/profile_thumbnail.png" alt="Profile Picture">
+        </div>
 
       <!-- <div class="side max-height"> -->
         <div id="form" class="lightblue-transparent-box">
@@ -141,25 +142,30 @@
 
         <div id="socials" class="yellow-transparent-box">
           <div>
-            <img class="small-icon" src="./images/socials/facebook.png">
+            <img class="small-icon" src="./images/socials/facebook.png" alt="Facebook Logo">
           </div>
           <div>
-            <img src="./images/socials/twitter.png">
+            <img src="./images/socials/twitter.png" alt="Twitter Logo">
           </div>
           <div>
-            <img src="./images/socials/youtube.png">
+            <img src="./images/socials/youtube.png" alt="Youtube Logo">
           </div>
         </div>
 
         <div id="my-info" class="black-transparent-box">
-          <p>George Ceja</p>
-          <p>+1 510.493.5532</p>
-          <p>GeorgeCeja08@gmail.com</p>
-          <p>San Francisco, CA</p>
+          <div>
+            <h2>When something is <em>important</em> enough, you do it even if the <em>odds</em> are not in your favor.</h2>
+          </div>
+          <div class="space-down">
+            <p>George Ceja</p>
+            <p>+1 510.493.5532</p>
+            <p>GeorgeCeja08@gmail.com</p>
+            <p>San Francisco, CA</p>
+          </div>
         </div>
       <!-- </div> -->
     </section>
 
-    <script src="main.js" charset="utf-8"></script>
+    <script src="main.js"></script>
   </body>
 </html>

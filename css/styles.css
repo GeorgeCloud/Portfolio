@@ -44,14 +44,15 @@ p {
 
 }
 
-h3 {
+/* h3 {
   margin-top: 0;
-}
+} */
 
 textarea {
   height: 100px;
   width: 300px;
   margin-bottom: 20px;
+  resize: none;
 }
 
 input {
@@ -136,10 +137,6 @@ img.logo {
 .thumbnail {
   height: 80%;
   width: 100%;
-}
-
-.mrp-icon {
-
 }
 
 .log-nav {
@@ -227,7 +224,7 @@ img.logo {
 
 #view-work {
   width: 100px;
-  height: 50px;
+  height: 54px;
   background: white;
   padding: 0;
   border: 0;
@@ -238,10 +235,14 @@ img.logo {
   text-decoration: none;
 }
 
+.space-down {
+  border-top: 1px solid;
+}
+
 .white-box {
   background-color: white;
   width: 101px;
-  height: 52px;
+  height: 60px;
   padding: 1px 2px;
   margin-top: 15%;
   margin-left: 45%;
@@ -264,10 +265,9 @@ img.logo {
   z-index: 100;
 }
 
-#contact-me img {
-  height: 75px;
-  width: 100px;
-  /* margin-bottom: 100px; */
+#socials img {
+  height: 70px;
+  width: 60px;
 }
 
 .yellow-transparent-box {
@@ -279,7 +279,7 @@ img.logo {
 
 .lightblue-transparent-box {
   background-color: lightgrey;
-  opacity: 60%;
+  opacity: 90%;
   padding: 50px;
 }
 
@@ -287,6 +287,11 @@ img.logo {
   background-color: black;
   opacity: 80%;
   padding: 50px;
+}
+
+.space-down {
+  text-align: justify;
+  margin-top: 25%;
 }
 
 #home-button {
@@ -331,8 +336,77 @@ img.logo {
 }
 
 #experience {
-  height: 50vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-column: column;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header   header   header   header"
+                       "cloudapp1 cloudapp2 cloudapp3 cloudapp4"
+                       "robotics1 robotics2 robotics3 robotics4";
+  height: 70vh;
 }
+
+#experience h1 {
+  grid-area: header;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: white solid 1px;
+  padding: 50px;
+}
+
+#experience h4 {
+  color: lightblue;
+  padding-bottom: 10px;
+}
+
+#experience img {
+  padding-left: 20px;
+}
+
+.cloudapp1 {
+  grid-area: cloudapp1;
+
+}
+
+.cloudapp2 {
+  grid-area: cloudapp2;
+
+}
+
+.cloudapp3 {
+  grid-area: cloudapp3;
+
+}
+
+.cloudapp4 {
+  grid-area: cloudapp4;
+}
+
+/* .robotics-experience {
+  grid-area: robotics;
+} */
+
+
+.robotics1 {
+  grid-area: robotics1;
+}
+
+.robotics2 {
+  grid-area: robotics2;
+}
+
+.robotics3 {
+  grid-area: robotics3;
+}
+
+.robotics4 {
+  grid-area: robotics4;
+}
+
 
 #portfolio {
   height: 70vh;
@@ -341,17 +415,20 @@ img.logo {
 #contact-me {
   display: grid;
   grid-gap: 1rem;
-  /* grid-column: row; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "contact-me contact-me contact-me contact-me"
-                       "form       form       my-info    social"
-                       "form       form       my-info    social"
-                       "form       form       my-info    social";
+                       "form       my-info    my-info    profile-picture"
+                       "form       my-info    my-info    profile-picture"
+                       "form       my-info    my-info    social";
 
   background-image: url("/images/san-fran.png");
   background-size: auto;
   background-attachment: fixed;
-  height: 60vh;
+  height: 70vh;
+}
+
+#form {
+  grid-area: form;
 }
 
 .side {
@@ -369,21 +446,41 @@ img.logo {
   text-align: center;
 }
 
+.profile-picture {
+  grid-area: profile-picture;
+}
+
+.profile-picture img {
+  opacity: .7;
+  height: 100%;
+  width: 100%;
+}
+
 #socials {
   grid-area: social;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: auto;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #my-info {
   grid-area: my-info;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact-me input {
   height: 30px;
   width: 300px;
   margin-bottom: 20px;
-  /* margin-bottom: 20px; */
+}
+
+#contact-me input::placeholder {
+  color: black;
+  opacity: .9;
+}
+
+#contact-me textarea::placeholder {
+  color: black;
+  opacity: .9;
 }
