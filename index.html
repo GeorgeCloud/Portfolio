@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>GC Resume</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -23,8 +24,8 @@
     </section>
 
     <section id="home">
-      <h1 class="large-font">Hi, My Name Is <i class="name-color">George Ceja</i></h1>
-      <h2>Who's <em class="desc">passionate</em> about learning and applying <em class="desc">Computer Science</em></h2>
+      <h1 data-aos="fade-right" class="large-font">Hi, My Name Is <i class="name-color">George Ceja</i></h1>
+      <h2 data-aos="fade-left">Who's <em class="flicker">passionate</em> about learning and applying <em class="flicker">Computer Science</em></h2>
       <div class="white-box">
         <div class="black-box">
           <button id="view-work" href="#about-me" type="button" name="button"><a href="#portfolio">View Projects</a></button>
@@ -78,20 +79,19 @@
 
     <section class="reset above-and-down" id="experience">
       <h1>Experience</h1>
-      <div class="experience-item">
+      <div class="experience-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="cloudapp-item-1">
           <a href="https://www.getcloudapp.com/">
             <img class="logo" src="./images/cloudapp.png" alt="CloudApp Logo">
           </a>
           <h4 class="">CloudApp - Software Developer</h4>
         </div>
-        <!-- <div class="above-and-down"> -->
+
         <p class="cloudapp-item-2"><b>Dec 2019 – Jul 2021</b></p>
         <p class="cloudapp-item-3"><b>Castro Valley, California</b></p>
         <p class="cloudapp-item-4">Added core features: user activity notifications, file expiration settings, webhooks, created userbase click tracking software.</p>
-        <!-- </div> -->
       </div>
-      <div class="experience-item">
+      <div class="experience-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="robotics-item-1">
           <a href="https://pioneers.berkeley.edu/">
             <img class="logo" src="./images/pi.png" alt="PI Robotics Logo">
@@ -103,7 +103,7 @@
         <p class="robotics-item-4">Implemented features: autonomous driving with sensors, finding shortest path, speeds, and support new team members by teaching foundalmentals programming concepts.</p>
         <!-- </div> -->
       </div>
-      <div class="experience-item">
+      <div class="experience-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="">
           <img class="logo" src="./images/empty.png" alt="Empty Logo">
           <h4>Empty</h4>
@@ -112,7 +112,7 @@
         <p><b>----------------</b></p>
         <p>----------------------------------------------------------------------</p>
       </div>
-      <div class="experience-item">
+      <div class="experience-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="robotics-item-1">
           <img class="logo" src="./images/empty.png" alt="Empty Logo">
           <h4>Empty</h4>
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <section class="" id="portfolio">
+    <section id="portfolio">
       <h1>Projects</h1>
       <ul class="portfolio-projects">
         <li>
@@ -138,7 +138,7 @@
             not only distance but evelation too.</p>
         </li>
         <li>
-          <h5>Material requirements planning.</h5>
+          <h5>MRP System</h5>
           <img class="thumbnail" src="./images/eazy.png" alt="Eazy Walks Logo">
           <p class="description">Keep track of your inventory, simply add an item, enter the information
             such as item's trim, color, quantity, and even sub-categories.</p>
@@ -149,28 +149,12 @@
     <section id="contact-me">
         <h1>Contact Me</h1>
 
-        <div class="profile-picture">
-          <img src="./images/profile_thumbnail.png" alt="Profile Picture">
-        </div>
-
         <div id="form" class="lightblue-transparent-box">
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Email">
           <input type="text" placeholder="Subject">
           <textarea cols="20" rows="10" placeholder="Enter your message" required></textarea>
           <input type="button" value="Send Message">
-        </div>
-
-        <div id="socials" class="yellow-transparent-box">
-          <div>
-            <img class="small-icon" src="./images/socials/facebook.png" alt="Facebook Logo">
-          </div>
-          <div>
-            <img src="./images/socials/twitter.png" alt="Twitter Logo">
-          </div>
-          <div>
-            <img src="./images/socials/youtube.png" alt="Youtube Logo">
-          </div>
         </div>
 
         <div id="my-info" class="black-transparent-box">
@@ -184,8 +168,24 @@
             <p>San Francisco, CA</p>
           </div>
         </div>
-    </section>
 
+        <div class="profile-picture">
+          <img src="./images/profile_thumbnail.png" alt="Profile Picture">
+        </div>
+
+        <div id="socials" class="lightblue-transparent-box">
+          <div>
+            <img class="small-icon" src="./images/socials/facebook.png" alt="Facebook Logo">
+          </div>
+          <div>
+            <img class="small-icon" src="./images/socials/twitter.png" alt="Twitter Logo">
+          </div>
+          <div>
+            <img class="small-icon" src="./images/socials/youtube.png" alt="Youtube Logo">
+          </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

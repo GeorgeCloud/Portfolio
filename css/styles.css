@@ -70,7 +70,7 @@ img.logo {
 
 .black-transparent-box {
   background-color: black;
-  opacity: 80%;
+  opacity: 0.8;
   padding: 50px;
 }
 
@@ -97,9 +97,16 @@ img.logo {
   grid-area: cloudapp4;
 }
 
-.desc {
+.flicker {
   font-size: 47px;
   padding: 0 15px;
+  animation: flicker 2s linear infinite;
+}
+
+@keyframes flicker {
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
 }
 
 .description {
@@ -183,6 +190,10 @@ img.logo {
   height: 80%;
 }
 
+.portfolio-projects img {
+  height: 20rem;
+}
+
 .portfolio-projects li {
   height: 80%;
   width: 30%;
@@ -205,6 +216,10 @@ img.logo {
   flex-direction: row;
   margin-top: 25px;
   width: 100%;
+}
+
+.small-icon {
+  margin-top: 45%;
 }
 
 .space-down {
@@ -268,9 +283,9 @@ img.logo {
   justify-content: space-around;
 }
 
-.yellow-transparent-box {
+.lightblue-transparent-box {
   background-color: lightblue;
-  opacity: 60%;
+  opacity: .7;
   padding: 50px;
 }
 
@@ -323,7 +338,6 @@ img.logo {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "header   header   header   header"
                        "cloudapp robotics cadoo    none";
-                       /* "robotics1 robotics2 robotics3 robotics4"; */
   height: 70vh;
 }
 
@@ -348,7 +362,7 @@ img.logo {
 
 #education-header {
   margin-top: 500px;
-  background-image: url("/images/sky.png");
+  background-image: url("/images/sky.gif");
   background-size: cover;
   background-attachment: fixed;
   height: 30vh;
@@ -408,10 +422,6 @@ img.logo {
   height: 600px;
   border: white solid 1px;
   margin-right: 50px;
-}
-
-#portfolio {
-  height: 80vh;
 }
 
 #portfolio h1 {
