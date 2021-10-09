@@ -5,7 +5,7 @@ html {
 body {
   margin: 0 5rem;
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 15px;
   background-color: black;
   color: white;
 }
@@ -78,7 +78,7 @@ img.logo {
   display: flex;
   flex-direction: column;
   border: white solid 1px;
-  padding: 50px;
+  padding: 30px;
 }
 
 .cloudapp-item-1 {
@@ -234,7 +234,7 @@ img.logo {
 }
 
 .top-35 {
-  margin-top: 25%;
+  margin-top: 35%;
   border: white solid 0.1px;
 }
 
@@ -309,7 +309,7 @@ img.logo {
                        "form       my-info    my-info    profile-picture"
                        "form       my-info    my-info    social";
 
-  background-image: url("/images/san-fran.png");
+  background-image: url("../images/san-fran.png");
   background-size: auto;
   background-attachment: fixed;
   height: 90vh;
@@ -317,6 +317,7 @@ img.logo {
 
 #contact-me h1 {
   grid-area: contact-me;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -361,8 +362,8 @@ img.logo {
 }
 
 #education-header {
-  margin-top: 500px;
-  background-image: url("/images/sky.gif");
+  margin-top: 250px;
+  background-image: url("../images/sky.gif");
   background-size: cover;
   background-attachment: fixed;
   height: 30vh;
@@ -378,6 +379,7 @@ img.logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 7%;
 }
 
 #home h1 {
@@ -415,7 +417,7 @@ img.logo {
 }
 
 #picture {
-  background-image: url("/images/cover.png");
+  background-image: url("../images/cover.png");
   background-size: auto;
   background-attachment: fixed;
   width: 600px;
