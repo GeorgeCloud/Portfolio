@@ -219,7 +219,7 @@ img.logo {
 }
 
 .small-icon {
-  margin-top: 45%;
+  margin-top: 2rem;
 }
 
 .space-down {
@@ -446,6 +446,7 @@ img.logo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 25px;
 }
 
 #socials img {
