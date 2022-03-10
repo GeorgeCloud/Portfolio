@@ -192,13 +192,14 @@ img.logo {
 }
 
 .portfolio-projects img {
-  height: 20rem;
+  height: 10rem;
+  width: 15rem;
 }
 
 .portfolio-projects li {
   height: 80%;
   width: 20vw;
-  padding: 20px;
+  padding: 0 25px;
   text-align: center;
 }
 
