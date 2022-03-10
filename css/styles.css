@@ -188,6 +188,7 @@ img.logo {
   border: white solid 1px;
   padding: 20px;
   height: 80%;
+
 }
 
 .portfolio-projects img {
@@ -196,7 +197,8 @@ img.logo {
 
 .portfolio-projects li {
   height: 80%;
-  width: 30%;
+  width: 20vw;
+  padding: 20px;
   text-align: center;
 }
 
@@ -333,12 +335,6 @@ img.logo {
 }
 
 #experience {
-  display: grid;
-  grid-gap: 1rem;
-  /* grid-column: column; */
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "header   header   header   header"
-                       "cloudapp robotics cadoo    none";
   height: 70vh;
 }
 
