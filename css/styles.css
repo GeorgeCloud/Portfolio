@@ -38,6 +38,7 @@ nav ul {
 
 li {
   padding-top: 0;
+  width: 100%;
 }
 
 a {
@@ -110,7 +111,7 @@ img.logo {
 }
 
 .description {
-  font-size: 19px;
+  font-size: 15px;
   text-align: left;
 }
 
@@ -182,6 +183,20 @@ img.logo {
 }
 
 .portfolio-projects {
+
+    display: flex;
+    flex-direction: column;
+    border: white solid 1px;
+    padding: 30px;
+
+
+  /* height: 80%; */
+  /* width: 100%; */
+  /* padding: 50px; */
+  /* min-width: 500px; */
+}
+
+.portfolio-projects {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -192,16 +207,27 @@ img.logo {
 }
 
 .portfolio-projects img {
-  height: 10rem;
-  width: 15rem;
+  /* height: 10rem;
+  width: 15rem; */
+
+  height: 80%;
+  width: 100%;
+
 }
 
 .portfolio-projects li {
   height: 80%;
-  width: 20vw;
+  width: 20%;
   padding: 0 25px;
   text-align: center;
 }
+
+/* .portfolio-projects li {
+  height: 80%;
+  width: 20vw;
+  padding: 0 25px;
+  text-align: center;
+} */
 
 .reset p, h1 h3, h4, h5{
   margin: 0;
@@ -231,10 +257,10 @@ img.logo {
   margin-top: 25%;
 }
 
-.thumbnail {
+/* .thumbnail {
   height: 80%;
   width: 100%;
-}
+} */
 
 .top-35 {
   margin-top: 35%;
@@ -428,7 +454,7 @@ img.logo {
 }
 
 #portfolio h5 {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
