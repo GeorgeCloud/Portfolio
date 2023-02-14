@@ -10,21 +10,13 @@ body {
   color: white;
 }
 
-section {
-  padding: 50px;
-  margin-bottom: 25px;
+a {
+  color: white;
 }
+
 
 nav {
   margin-top: 0.5rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
-section h1, h3 {
-  margin-top: 0;
 }
 
 nav ul {
@@ -36,13 +28,23 @@ nav ul {
   justify-content: space-between;
 }
 
+ul.no-bullet {
+  list-style-type: none;
+}
+
 li {
   padding-top: 0;
   width: 100%;
 }
 
-a {
-  color: white;
+
+section {
+  padding: 50px;
+  margin-bottom: 25px;
+}
+
+section h1, h3 {
+  margin-top: 0;
 }
 
 textarea {
@@ -188,12 +190,6 @@ img.logo {
     flex-direction: column;
     border: white solid 1px;
     padding: 30px;
-
-
-  /* height: 80%; */
-  /* width: 100%; */
-  /* padding: 50px; */
-  /* min-width: 500px; */
 }
 
 .portfolio-projects {
@@ -207,9 +203,6 @@ img.logo {
 }
 
 .portfolio-projects img {
-  /* height: 10rem;
-  width: 15rem; */
-
   height: 80%;
   width: 100%;
 
@@ -221,13 +214,6 @@ img.logo {
   padding: 0 25px;
   text-align: center;
 }
-
-/* .portfolio-projects li {
-  height: 80%;
-  width: 20vw;
-  padding: 0 25px;
-  text-align: center;
-} */
 
 .reset p, h1 h3, h4, h5{
   margin: 0;
@@ -256,11 +242,6 @@ img.logo {
   text-align: justify;
   margin-top: 25%;
 }
-
-/* .thumbnail {
-  height: 80%;
-  width: 100%;
-} */
 
 .top-35 {
   margin-top: 35%;

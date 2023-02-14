@@ -13,22 +13,40 @@
     <section class="log-nav">
       <h1 class="name-logo">George Ceja</h1>
       <nav>
-        <ul>
-          <li><a href="#about-me"><img data-href="home" id="home-button" src="./images/home.png" alt="home button"></a></li>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
+        <ul class="no-bullet">
+          <li>
+            <a href="#about-me">
+              <img data-href="home" id="home-button" src="./images/home.png" alt="home button"/>
+            </a>
+          </li>
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#portfolio">Projects</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
         </ul>
       </nav>
     </section>
 
     <section id="home">
-      <h1 data-aos="fade-right" class="large-font">Hi, My Name Is <i class="name-color">George Ceja</i></h1>
-      <h2 data-aos="fade-left">I am <em class="flicker">passionate</em> about learning and applying <em class="flicker">Computer Science</em></h2>
+      <h1 data-aos="fade-right" class="large-font">
+        Hi, My Name Is <i class="name-color">George Ceja</i>
+      </h1>
+      <h2 data-aos="fade-left">
+        I am <em class="flicker">passionate</em> about learning and applying <em class="flicker">Computer Science</em>
+      </h2>
       <div class="white-box">
         <div class="black-box">
-          <button id="view-work" href="#about-me" type="button" name="button"><a href="#portfolio">View Projects</a></button>
+          <button id="view-work" href="#about-me" type="button" name="button">
+            <a href="#portfolio">View Projects</a>
+          </button>
         </div>
       </div>
     </section>
@@ -36,14 +54,18 @@
     <section id="about-me">
       <div id="picture">
       </div>
-      <h3 class="outline top-35">My name is George I am a software developer, I am based in California.</h3>
+      <h3 class="outline top-35">
+        My name is George I am a software developer, I am based in California.
+      </h3>
     </section>
 
     <section id="about-me2">
-      <h2 class="medium-font outline">After graduating from High School, I worked
-        at a large startup as a software developer, Currently I am studying Computer
-        Science at Dominican University of California. On my free time I enjoy working
-        with close friends to build applications that make daily tasks easier.</h2>
+      <h2 class="medium-font outline">
+        I have prior work experience in the software industry, I have 2 years of experience
+        shipping features for a fast growing startup that had 3 million users at the time. My
+        contributions include: Implementing new features to web applications (user activity notifications,
+        file expiration settings, webhooks, ability to upload gif as profile picture)
+      </h2>
     </section>
 
     <section id="education-header">
@@ -51,10 +73,10 @@
     </section>
 
     <section class="content reset above-and-down" id="education">
-      <ul>
+      <ul class="no-bullet">
         <li>
           <a href="https://www.dominican.edu/">
-            <img class="logo" src="./images/dominican_logo.png" alt="dominican school logo">
+            <img class="logo" src="./images/logos/dominican_logo.png" alt="dominican school logo">
           </a>
           <div class="above-and-down">
             <h4>Dominican University of California</h4>
@@ -65,7 +87,7 @@
         </li>
         <li>
           <a href="https://www.codefellows.org/">
-            <img class="logo" src="./images/cf_logo.png" alt="Code Fellows Logo">
+            <img class="logo" src="./images/logos/cf_logo.png" alt="Code Fellows Logo">
           </a>
 
           <div class="above-and-down">
@@ -83,53 +105,90 @@
       <div class="experience-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="cloudapp-item-1">
           <a href="https://www.getcloudapp.com/">
-            <img class="logo" src="./images/cloudapp.png" alt="CloudApp Logo">
+            <img class="logo" src="./images/logos/cloudapp.png" alt="CloudApp Logo">
           </a>
           <h4 class="">CloudApp - Software Developer</h4>
         </div>
 
-        <p class="cloudapp-item-2"><b>Dec 2019 – Jul 2021</b></p>
-        <p class="cloudapp-item-3"><b>Castro Valley, California</b></p>
-        <p class="cloudapp-item-4">Added core features: user activity notifications, file expiration settings, webhooks, created userbase click tracking software.</p>
+        <p class="cloudapp-item-2">
+          <b>Dec 2019 – Jul 2021</b>
+        </p>
+        <p class="cloudapp-item-3">
+          <b>Castro Valley, California</b>
+        </p>
+        <p class="cloudapp-item-4">
+          - Added core features: user activity notifications, file expiration settings,
+          webhooks, created userbase click tracking software.
+        </p>
+
+        <p>- Created analysis software tools for the marketing and quality assurance team</p>
+
+        <p>- Code reviewed over 100+  pull requests</p>
+
+        <p>- Code reviewed existing pull requests</p>
+
+        <p>- Created an automated script to migrate over 10,000+ users to new V2 database</p>
+        
+        <p>- Learned multiple industry software tools</p>
       </div>
       <div class="experience-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="robotics-item-1">
           <a href="https://pioneers.berkeley.edu/">
-            <img class="logo" src="./images/pi.png" alt="PI Robotics Logo">
+            <img class="logo" src="./images/logos/pi.png" alt="PI Robotics Logo">
           </a>
           <h4>ECHS PI Competition - Robotics Programmer</h4>
         </div>
-        <p class="robotics-item-2"><b>Jan 2015 – Dec 2016</b></p>
-        <p class="robotics-item-3"><b>UC Berkeley, California</b></p>
-        <p class="robotics-item-4">Added autonomous driving(sensors), implement shortest path, speeds, and teach new team members the foundalmentals of programming concepts.</p>
+        <p class="robotics-item-2">
+          <b>Jan 2015 – Dec 2016</b>
+        </p>
+        <p class="robotics-item-3">
+          <b>UC Berkeley, California</b>
+        </p>
+        <p class="robotics-item-4">
+          -Added autonomous driving(sensors), implement shortest path, speeds, and teach new team members the foundalmentals of programming concepts.
+        </p>
         </div>
       </div>
     </section>
 
     <section id="portfolio">
       <h1>Projects</h1>
-      <ul class="portfolio-projects">
+      <ul class="portfolio-projects no-bullet">
         <li>
-          <h5><a href="https://gjhm.herokuapp.com/">Heavenly Media</a></h5>
-          <img class="thumbnail" src="./images/movies.png" alt="Heavenly Media Logo">
-          <p class="description">Always up-to-date with the best and most recent movies. Create playlists and share them with family and friends</p>
+          <h5>
+            <a href="https://gjhm.herokuapp.com/">Heavenly Media</a>
+          </h5>
+          <img class="thumbnail" src="./images/thumbnails/movies.png" alt="Heavenly Media Logo"/>
+          <p class="description">
+            Always up-to-date with the best and most recent movies. Create playlists and share them with family and friends
+          </p>
         </li>
         <li>
           <h5>Pokemon Tracker</h5>
-          <img class="thumbnail" src="./images/pokemon_project.png" alt="Pokemon Go Tracker Thumbnail">
-          <p class="description">Helps users advance faster in Pokemon Go</p>
+          <img class="thumbnail" src="./images/thumbnails/pokemon_project.png" alt="Pokemon Go Tracker Thumbnail">
+          <p class="description">
+            Helps users advance faster in Pokemon Go
+          </p>
         </li>
         <li>
-          <h5><a href="https://github.com/My-MRP/management-resource-planning">Eazy Walks</a></h5>
-          <img class="thumbnail mrp-icon" src="./images/mrp.png" alt="MRP Thumbnail">
-          <p class="description">Keep track of your inventory, simply add an item, enter the information
-            such as item's trim, color, quantity, and even sub-categories.</p>
+          <h5>
+            <a href="https://github.com/My-MRP/management-resource-planning">Eazy Walks</a>
+          </h5>
+
+          <img class="thumbnail mrp-icon" src="./images/thumbnails/mrp.png" alt="MRP Thumbnail">
+
+          <p class="description">
+            Keep track of your inventory, simply add an item, enter the information
+            such as item's trim, color, quantity, and even sub-categories.
+          </p>
         </li>
         <li>
           <h5><a href="https://301-final-project.github.io/301-final-project">MRP System</a></h5>
-          <img class="thumbnail" src="./images/eazy.png" alt="Eazy Walks Logo">
-          <p class="description">The better Yelp, gives you the best and fastest direction to anywhere. Calculates
-              not only distance but evelation too.</p>
+          <img class="thumbnail" src="./images/thumbnails/eazy.png" alt="Eazy Walks Logo">
+          <p class="description">
+            The better Yelp, gives you the best and fastest direction to anywhere.
+            Calculates not only distance but evelation too.
+            </p>
         </li>
       </ul>
     </section>
@@ -145,12 +204,16 @@
             <textarea cols="20" rows="10" placeholder="Enter your message" required></textarea>
             <input id="form-submit-button" type="button" value="Send Message">
           </div>
-          <h2 id="submit-message" style="display:none;"><em>Thanks for visiting, you'll recieve a response within 24hrs.</em></h2>
+          <h2 id="submit-message" style="display:none;">
+            <em>Thanks for visiting, you'll recieve a response within 24hrs.</em>
+          </h2>
         </div>
 
         <div id="my-info" class="black-transparent-box">
           <div>
-            <h2>When something is <em>important</em> enough, you do it even if the <em>odds</em> are not in your favor.</h2>
+            <h2>
+              When something is <em>important</em> enough, you do it even if the <em>odds</em> are not in your favor.
+            </h2>
           </div>
           <div class="space-down">
             <p>George Ceja</p>
@@ -166,13 +229,13 @@
 
         <div id="socials" class="lightblue-transparent-box">
           <div>
-            <img class="small-icon" src="./images/socials/facebook.png" alt="Facebook Logo">
+            <img class="small-icon" src="./images/socials/facebook.png" alt="Facebook Logo"/>
           </div>
           <div>
-            <img class="small-icon" src="./images/socials/twitter.png" alt="Twitter Logo">
+            <img class="small-icon" src="./images/socials/twitter.png" alt="Twitter Logo"/>
           </div>
           <div>
-            <img class="small-icon" src="./images/socials/youtube.png" alt="Youtube Logo">
+            <img class="small-icon" src="./images/socials/youtube.png" alt="Youtube Logo"/>
           </div>
         </div>
     </section>
