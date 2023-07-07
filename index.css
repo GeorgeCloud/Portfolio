@@ -479,20 +479,14 @@ button:focus {
   }
 
   header {
-    width: 96vw;
-    background: #fff;
-    padding: 4vh 2vw;
-    position: absolute;
-  }
-
-  #header table tr td {
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 15px 0px;
+      display: none;
   }
 
   #navigation a {
     color: #000;
+  }
+
+  #work {
+      margin-top: 50px;
   }
 }
